@@ -1,2 +1,2 @@
-# farbreiz.rocks
+# farbreiz
 Für weniger Schwarz-Weiß-Denken
