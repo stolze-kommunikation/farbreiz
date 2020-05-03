@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>farbreiz - denke bunter</title>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/flexslider.css" rel="stylesheet" >
+	<link href="./css/styles.css" rel="stylesheet">
+	<link href="./css/queries.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+</head>
+<body>
+    <a id="audioctl" class="light">Musik</a>
+	<script>
+		var audio = parent.document.getElementById('player');
+		var ctl   = document.getElementById('audioctl');
+		if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
+		if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
+		ctl.addEventListener('click', function () {
+			if (audio.paused) {
+				audio.play();
+				if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
+			} else if (!audio.paused) {
+				audio.pause();
+				if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
+			}
+		}, false);
+	</script>
+      <!--<h1 class="title"><a href="start.html">farbreiz</a></h1>-->
+           <section id="einleitung_hut">
+            <div class="container-fluid">
+            	<div class="row">
+                	<div class="col-md-12">
+                    <h1>Wie man die Toleranzdosis <br />erhöhen kann</h1>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                    <p>Wie ist es möglich Vorurteile oder Diskriminierung abzubauen? Kann man die Bilder in den Köpfen der Men- schen überschreiben? Sind einzelne Stereotype auflösbar? Oder kann man die konkreten diskriminierenden Verhaltensweisen ablegen oder gar ein „Frühwarnsystem“ etablieren?</p>
+                    <p>Es gibt mehrere Ansätze dies in Angriff zu nehmen. Die beste Möglichkeit, die die Persönlichkeitsbildung beeinflusst, ist es Kontaktsituationen zu schaffen. Durch persönliche Erlebnisse können die Erfahrungen positiv verankert werden und das Bild des Vorurteils überschrieben bzw. abgelegt werden. Solidarität und Zivielcourage gegenüber Fremdgruppenmitgliedern fördert das Klima des Miteinanders und das Gefühl der persönlichen Verantwortung.</p>
+                    <p>Auch die Medien können durch gezielte Informationskamagnen in denen sie die Gemeinsamkeiten betonen, für das gemeinschaftliche Miteinander sorgen. Hierzu kann man spezielle Fernsehsendungen für Kinder, Kulturprogramme oder Öffentlichkeitskampagnen (Sportler gegen Rassismus) anbieten.</p>
+                    </div>
+                    <div class="col-md-5">
+                    <p>Sogenannte Culture Assimilations sind Selbstlernprogramme, die auf kulturelle Unterschiede hinweisen. Sie versuchen ein Verständnis dafür zu wecken, dass man Offenheit sowie Rücksicht für andere Kulturen haben soll. In Unternehmen oder Organisationen kann durch Diversity Management darauf geachtet werden, die individuelle Verschiedenheit der einzelnen Mitarbeiter als positive Wertschätzung zu nutzen, um die Chancengleichheit zu fördern. Individualprogramme sind hilfreich, aber leider kostenintensiv. Damit wird z.B. einer autoritären Persönlichkeit geholfen mit Aggressionen umzugehen und eine eigenständige moralische Position zu entwickeln.</p>
+                    <p>Alle Präventionsprogramme sollten unbedingt versuchen, die Bedrohungswahrnehmung durch Minderheiten abzubauen und die Empathiefähigkeit steigern. Die Bedrohungswahrnehmung ist evolutionsbedingt leider der Hauptgrund für Diskriminierung. Das ist das Alleinstellungsmerkmal des Menschen - er ist in der Lage Automatismen zu korrigieren und kann sich selbst beobachten sowie das eigene Handeln anhand der ge- wonnen Selbsterkenntnis bewusst steuern. Denn Wissen ist zum Handeln da!</p>
+                    </div>
+                </div>
+            </div>
+            </section>   
+			<section id="phase1">
+            	<div class="container">
+            		<div class="row">
+                    	<div class="col-md-12">
+                        	<h1>Hasst du noch oder <br />handelst du schon?</h1>
+                        </div>
+                         <div class="col-md-5 col-md-offset-1">
+                            <h2>Phase 1: Gruppenbildung</h2>
+	                    	<p>In einem Ferienlager wurde eine Studie ausprobiert, um Gruppenverhalten unter Konfliktsituationen zu erkunden. Hierzu wurden zwei Gruppen mit 11 bis 12-jährigen Jungs gebildet. Sie bekamen jeweils ein Lager zugeteilt. Ihnen wurden Aufgaben gestellt, wie z.B. das gemeinsame Aufbauen des Zelts und Vorbereitung des Essens. Hierdurch entwickelte sich eine Gruppenidentität, die unter anderem zum Ausdenken eines Gruppennames kam.</p>
+                         </div>
+                         <div class="col-md-5">
+                         	<video src="video/fahne_final.mp4" class="boxer" type="video/mp4"codecs="avc1.42E01E, mp4a.40.2" autobuffer autoplay loop />
+                         </div>
+                    </div>
+                </div>
+            </section>
+			<section id="phase2">
+            	<div class="container">
+            		<div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                    <h2>Phase 2: Ein Fass aufmachen!</h2>
+                    <p>In der nun vorsätzlich herbei geführten Konfliktphase wurde ein Sportturnier veranstaltet. Die Gruppen traten gegeneinander an, der jeweilige Sieger wurde mit Preisen belohnt &ndash; der Verlierer ging leer aus.</p>
+                    <p>So wurde die Abhängigkeit der Teammitglieder innerhalb der Gruppe so verstärkt, dass es bei Aufgaben zur Einschätzung der eigenen Gruppe zur Überschätzung der Leistung kam. Innerhalb der Gruppen entstanden Führungspositionen, die Struktur der eigenen Gruppe wurde intern an den Konflikt angepasst. So wurden Mitglieder der anderen Gruppe komplett gemieden und es wurden Pläne geschmiedet, wie der Fremdgruppe Schaden zugefügt werden kann.</p>
+                    </div>
+                   		 <div class="col-md-5">
+                         	<video src="video/wasserpistole_final.mp4" class="boxer" type="video/mp4"codecs="avc1.42E01E, mp4a.40.2" autobuffer autoplay loop />
+                         </div>
+                    </div>
+                </div>
+            </section>
+			<section id="phase3">
+            	<div class="container">
+            		<div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                    	<h2>Phase 3: Zusammenraufen!</h2>
+	                    	<p>In der letzten Kooperationsphase wurde geguckt, wie feindseliges Verhalten zwischen Gruppen in kooperatives, freundliches Verhalten verwandelt werden kann.</p>
+                            <p>Dies war durch gemeinsame positive Ziele möglich. Durch ein paar in Folge auftretender positiver Zusammenarbeiten der Gruppen, wie dem gemeinsamen herausziehens eines feststeckenden Essenstransports oder der gemeinsamen Suche nach dem Defekt der Wasserleitung im Lager, wurde die Annäherung deutlich spürbar. Offene Anfeindungen der Fremdgruppen entwickelten sich zu Freundschaften über die beiden Gruppengrenzen hinaus. Sogar eine Solidarität zwischen den beiden Gruppen ließ sich beobachten.</p>
+                    </div>
+                          <div class="col-md-5">
+                         	<video src="video/nussknacker_final.mp4" class="boxer" type="video/mp4"codecs="avc1.42E01E, mp4a.40.2" autobuffer autoplay loop />
+                         </div>
+                    </div>
+                </div>
+            </section>                         
+              <section id="links" class="section-padding hutmenu">
+              	<div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1 text-center">
+                                	<ul>
+                                    	<li><a href="start.html" class="home_btn">Startseite</a></li>
+                                 		<li><a href="schublade.html" class="schublade_btn">Schublade auf</a></li>
+                                 		<li><a href="kopf.html" class="kopf_btn">Kopf über</a></li>
+                                 		<li><a href="impressum.html" class="imprint_btn">Impressum</a></li>
+                                 	</ul>
+                                </div>
+                              <div class="col-md-6 col-md-offset-3 text-center">
+                                	<ul class="share-buttons">
+                                      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter" title="Share on Facebook" target="_blank"><img src="img/Facebook.png"></a></li>
+                                      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Tweet"><img src="img/Twitter.png"></a></li>
+                                      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Share on Google+"><img src="img/Google+.png"></a></li>
+                                      <li><a href="mailto:?subject=farbreiz%20-%20denke%20bunter&body=Webseite%20%C3%BCber%20die%20Entstehung%2C%20die%20%C3%9Cberspitzung%20und%20das%20Ablegen%20von%20Vorurteilen.:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Email"><img src="img/Email.png"></a></li>
+                                    </ul>
+                                </div>
+                                
+                             </div>
+                  		</div>              
+              </section>   
+              <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74379815-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

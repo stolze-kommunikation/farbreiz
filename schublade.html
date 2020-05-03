@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>farbreiz - denke bunter</title>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/flexslider.css" rel="stylesheet" >
+	<link href="./css/styles.css" rel="stylesheet">
+	<link href="./css/queries.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+</head>
+<body>
+     <a id="audioctl" class="light">Musik</a>
+	<script>
+		var audio = parent.document.getElementById('player');
+		var ctl     = document.getElementById('audioctl');
+		if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
+		if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
+		ctl.addEventListener('click', function () {
+			if (audio.paused) {
+				audio.play();
+				if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
+			} else if (!audio.paused) {
+				audio.pause();
+				if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
+			}
+		}, false);
+	</script>
+	    <!--<h1 class="title"><a href="start.html">farbreiz</a></h1>-->
+           <section id="einleitung_schublade">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-12">
+                    <h1>Es ist nicht so, <br />wie Du denkst</h1>
+                    <p class="text-center">Vorurteile &mdash; ein ständiger Begleiter im Alltag? Jeder hat sie? Ich auch? Nein! Wieso erkenne ich die Vorurteile bei anderen, aber meine eigenen nicht? Warum verteidige ich mein kopfgesteuertes Urteil? Kann ein Vorurteil richtig oder gar falsch sein? Kann ich positive Voreingenommenheiten komplett abhaken? In der Theorie ist praktisch alles möglich! </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+			<section id="zitat">
+            	<div class="container">
+            		<div class="row">
+                    	<div class="col-md-6">
+	                    	<blockquote>
+                              <img src="img/121-quotes-right.png" class="quote-r"/>
+                              <p>Ein Stereotyp ist ein starrer Eindruck, der nur in geringem Maße mit der Realität übereinstimmt und dadurch zustande kommt, dass wir zuerst urteilen und dann hinschauen</p>
+                              <footer><cite title="Quellentitel">Katz & Braly (1933)</cite></footer>
+                            </blockquote>
+                         </div>
+                         <div class="col-md-5">
+                         	<video src="video/gluehbirne_final.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autobuffer autoplay loop />
+                         </div>
+                    </div>
+                </div>
+            </section>
+           <section id="categoricus"> <!-- class="plax"--> 
+            <div class="container-fluid">
+            	<div class="row">
+                	<div class="col-md-12">
+                    <h2>Homo Kategoricus</h2>
+                    </div>
+              
+                    <div class="col-md-5 col-md-offset-1">
+                   		 <p>Der Mensch in seiner ursprünglichen Form bestand aus kleinen, homogen zusammengesetzten Gruppen, die in ihrer Umwelt Bedrohungen ausgesetzt waren. So entwickelte er Mechanismen als Reaktion auf Drucksituationen, in denen es ums Überleben ging. Dass heißt, dass unser Verstand evolutionsbedingt einen großen Teil seiner Aufgaben automatisch, unbewusst und ohne Willensanstrengung erledigt. <br /><br />Die menschlichen Werte und Bestrebungen haben sich allerdings in wenigen Generationen rasant und radikal verändert. Das soziale Wesen in der Gemeinschaft hat einen bewussten und reflektierenden Verstand gebildet, dessen Anschauung sich zu Fairness und Gerechtigkeit geändert hat.</p>
+                    </div>
+        
+                    <div class="col-md-5">
+                    <p>Wenn das Gehirn auf Informationen stösst wie Wörter, Bilder, Zahlen oder komplexe Konzepte, werden diese sofort mit verwandten jahreslang gesammelten Informationen abgerufen und einsortiert. <br /><br />So neigen Menschen dazu, andere Menschen anhand von Merkmalen zu kategorisieren. Das können sichtbare Merkmale sein, wie Hautfarbe oder Geschlecht. Allerdings wird dieser Ankereffekt auch bei unsichtbaren Merkmale wie Menschentypen (z.B. Karrierefrauen) eingesetzt. Gewisse Stereotypen werden also automatisch aktiviert, weil die gebildeten Kategorien als Grundlage für Vorurteile dienen. Sie sind eine Art Abfallprodukt, der ansonsten ungemein nützlichen menschlichen Fähigkeit, die Welt in Kategorien zu begreifen.</p>
+                    </div>
+ 
+                </div>
+            </div>
+            </section>
+            <section class="steinzeit">
+             	
+            </section>
+            <section id="subtyping" class="plax">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                <h2>Ich bilde mir <br/>mein eigenes Vorurteil</h2>
+                                </div>
+                                <div class="col-md-5 col-md-offset-1">
+                                 <video src="video/greifer_final.mp4" class="greifervideo" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autobuffer autoplay loop />
+                                 </div>
+                                <div class="col-md-5">
+                                <p>Soziale Kategorien können einen unterschiedlichen Umfang haben. So gibt es als Beispiel die Kategorie „Frau“ und die Subkategorie „mathematisch begabte Frau“. Wir neigen dazu, Informationen, die nicht dem Stereotyp entsprechen, abzuspalten, statt zu die Information zu integrieren. So sind diese Subkategorien die „Ausnahme von der Regel“. Stereotypen enthalten immer ein Körnchen Wahrheit, dennoch sollte man nicht vergessen, dass es immer Gruppenmitglieder gibt, die das Klichee sprengen.</p>
+                          		 </div>
+                                 
+                            </div>
+                       </div>
+              </section> 
+ 			<section class="crt-parallaxvideo">
+             	<video autoplay loop>
+                    <source src="video/Subtyping_final.mp4" type="video/mp4" autobuffer />
+                 </video>
+            </section>               
+              <section id="links" class="section-padding schublademenu plax">
+              <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1 text-center">
+                                	<ul>
+                                    	<li><a href="start.html" class="home_btn">Startseite</a></li>
+                                 		<li><a href="kopf.html" class="kopf_btn">Kopf über</a></li>
+                                        <li><a href="hut.html" class="hut_btn">Hut ab</a></li>
+                                 		<li><a href="impressum.html" class="imprint_btn">Impressum</a></li>
+                                 	</ul>
+                                </div>
+                                 <div class="col-md-6 col-md-offset-3 text-center">
+                                	<ul class="share-buttons">
+                                      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter" title="Share on Facebook" target="_blank"><img src="img/Facebook.png"></a></li>
+                                      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Tweet"><img src="img/Twitter.png"></a></li>
+                                      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Share on Google+"><img src="img/Google+.png"></a></li>
+                                      <li><a href="mailto:?subject=farbreiz%20-%20denke%20bunter&body=Webseite%20%C3%BCber%20die%20Entstehung%2C%20die%20%C3%9Cberspitzung%20und%20das%20Ablegen%20von%20Vorurteilen.:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Email"><img src="img/Email.png"></a></li>
+                                    </ul>
+                                </div>
+                                
+                             </div>
+                  		</div>              
+              </section>  
+              <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74379815-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

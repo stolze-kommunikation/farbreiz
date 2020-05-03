@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>farbreiz - denke bunter</title>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/flexslider.css" rel="stylesheet" >
+	<link href="./css/styles.css" rel="stylesheet">
+	<link href="./css/queries.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+	<script src="./js/modernizr.js"></script>
+	<link rel="shortcut icon" href="./img/fav.png" type="image/png" />
+</head>
+<body>
+    <a id="audioctl" class="dark">Musik</a>
+	<script>
+		var audio = parent.document.getElementById('player');
+		var ctl   = document.getElementById('audioctl');
+		if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
+		if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
+		ctl.addEventListener('click', function () {
+			if (audio.paused) {
+				audio.play();
+				if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
+			} else if (!audio.paused) {
+				audio.pause();
+				if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
+			}
+		}, false);
+	</script>
+    <h1 class="title"><a href="start.html">farbreiz</a></h1>
+    <div class="main">
+          <section class="schublade" id="schublade">
+              <!--<nav class="overlay">
+              <ul>
+              	<li><a href="#schublade">Schublade auf</a></li>
+                <li><a href="#kopf">Kopf über</a></li>
+                <li><a href="#hut">Hut ab</a></li>   
+              </ul>
+              </nav>-->
+               <!--<a href="#kopf" class="down-arrow-btn overlay clearfix"></a>-->
+               <a href="schublade.html" class="right-arrow-btn overlay clearfix"></a>
+            <!--</div>-->
+          <div class="videoContainer">
+         <a href="schublade.html"> <video src="video/kopf_schublade_final.mp4" type="video/mp4" media="all and (max-height:720px)" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autoplay loop /></a>
+          </div>
+         	
+          </section>    
+         <section class="kopf" id="kopf">
+         <!--<div class="container overlay">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <a href="kopf.html">
+                  	<h1 class="animated fadeInDown">kopf <span>über</span></h1>
+                  	<p class="animated fadeInUp delay-05s">Über Diskriminierung und Rassismus</p>
+ 				  </a>               
+                </div>
+              </div>-->
+               <!--<a href="#hut" class="down-arrow-btn overlay clearfix"></a>-->
+               <a href="kopf.html" class="right-arrow-btn overlay clearfix"></a>
+            <!--</div>-->
+         <div class="videoContainer">
+         <a href="kopf.html"><video src="video/kopfueber_final.mp4" type="video/mp4" media="all and (max-height:720px)" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autoplay loop /></a>
+         </div>
+            
+          </section>                            
+         <section class="hut" id="hut">
+              <!--<a href="#schublade" class="up-arrow-btn overlay clearfix"></a>-->
+              <a href="hut.html" class="right-arrow-btn overlay clearfix"></a>
+            <!--</div>-->
+         <div class="videoContainer">
+          <a href="hut.html"><video src="video/hutab_final.mp4" type="video/mp4" media="all and (max-height:720px)" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autoplay loop /></a>
+          </div>
+            
+          </section> 
+           <section id="links" class="section-padding imprintmenu plax">
+              <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-2 text-center">
+                                	<ul>
+                                    	<li><a href="schublade.html" class="schublade_btn">Schublade auf</a></li>
+                                 		<li><a href="kopf.html" class="kopf_btn">Kopf über</a></li>
+                                        <li><a href="hut.html" class="hut_btn">Hut ab</a></li>
+                                 		<li><a href="impressum.html" class="imprint_btn">Impressum</a></li>
+                                 	</ul>
+                                </div>
+                                 <div class="col-md-6 col-md-offset-4 text-center">
+                                	<ul class="share-buttons">
+                                      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter" title="Share on Facebook" target="_blank"><img src="img/Facebook.png"></a></li>
+                                      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.farbreiz.rocks&t=farbreiz%20-%20denke%20bunter:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Tweet"><img src="img/Twitter.png"></a></li>
+                                      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Share on Google+"><img src="img/Google+.png"></a></li>
+                                      <li><a href="mailto:?subject=farbreiz%20-%20denke%20bunter&body=Webseite%20%C3%BCber%20die%20Entstehung%2C%20die%20%C3%9Cberspitzung%20und%20das%20Ablegen%20von%20Vorurteilen.:%20http%3A%2F%2Fwww.farbreiz.rocks" target="_blank" title="Email"><img src="img/Email.png"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-md-offset-3" style="margin-top:40px">
+                                <h3>Quellen</h3>
+                                <p>
+                                <a href="https://www.beltz.de/fachmedien/psychologie/buecher/produkt_produktdetails/1756-stereotype_vorurteile_und_soziale_diskriminierung.html" target="_blank">"Stereotype, Vorurteile und soziale Diskriminierung - Theorie, Befunde und Interventionen", Lars Eric Petersen und Bernd Six (Hrsg.), Beltz Verlag, Weinheim Basel, 1.Auflage 2008</a></p>
+                                
+                                <p><a href="https://www.dtv.de/buecher/vor-urteile_42699.html" target="_blank">"Vor-Urteile &mdash; Wie unser Verhalten unbewusst gesteuert wird und was wir dagegen tun können", Mahzarin R. Banaji und Anthony G. Greenwald, dtv, 19. Juni 2015</a></p>
+                                <p><a href="https://www.bpb.de/izpb/9680/was-sind-vorurteile?p=all" target="_blank">Bundeszentrale für politische Bildung</a>, Aufruf 20.12.2015</p>
+                                <p><a href="https://www.welt.de/wissenschaft/article143913703/Warum-in-jedem-von-uns-ein-Rassist-schlummert.html" target="_blank">welt.de-Artikel: Warum in jedem von uns ein Rassist schlummert</a>, Aufruf 20.12.2015</p>
+                                <p><a href="https://www.youtube.com/watch?v=VBlFHuCzPgY" target="_blank">Elevator Music</a>, Aufruf 20.12.2015</p>
+                               
+                                </div>
+                                
+                             </div>
+                  		</div>              
+              </section>   
+              </div>
+              
+              <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".main").onepage_scroll({
+	   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+	   easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+	   animationTime: 500, // AnimationTime let you define how long each section takes to animate
+	   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+	   updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+	   loop: false,
+	});
+	
+	$('body').removeClass("loading").addClass('loaded');
+});
+</script> 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74379815-1', 'auto');
+  ga('send', 'pageview');
+</script>    
+</body>
+</html>
