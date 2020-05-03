@@ -19,19 +19,23 @@
 <body>
     <a id="audioctl" class="dark">Musik</a>
 	<script>
-		var audio = parent.document.getElementById('player');
-		var ctl   = document.getElementById('audioctl');
-		if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
-		if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
-		ctl.addEventListener('click', function () {
-			if (audio.paused) {
-				audio.play();
-				if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
-			} else if (!audio.paused) {
-				audio.pause();
-				if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
-			}
-		}, false);
+		var ctl = document.getElementById('audioctl');
+		try {
+			var audio = parent.document.getElementById('player');
+			if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
+			if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
+			ctl.addEventListener('click', function () {
+				if (audio.paused) {
+					audio.play();
+					if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
+				} else if (!audio.paused) {
+					audio.pause();
+					if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
+				}
+			}, false);
+		} catch (e) {
+			ctl.style.display = "none";
+		}
 	</script>
     <h1 class="title"><a href="start.html">farbreiz</a></h1>
     <div class="main">
@@ -65,7 +69,7 @@
                <a href="kopf.html" class="right-arrow-btn overlay clearfix"></a>
             <!--</div>-->
          <div class="videoContainer">
-         <a href="kopf.html"><video src="video/kopfueber_final.mp4" type="video/mp4" media="all and (max-height:720px)" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autoplay loop /></a>
+         <a href="kopf.html"><video id="video_kopfueber_final" src="video/kopfueber_final.mp4" type="video/mp4" media="all and (max-height:720px)" codecs="avc1.42E01E, mp4a.40.2" preload="auto" autoplay loop /></a>
          </div>
             
           </section>                            
@@ -129,7 +133,7 @@ $(document).ready(function(){
 	
 	$('body').removeClass("loading").addClass('loaded');
 });
-</script> 
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

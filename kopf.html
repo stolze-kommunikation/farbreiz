@@ -17,19 +17,23 @@
 <body>
      <a id="audioctl" class="light">Musik</a>
 	<script>
-		var audio = parent.document.getElementById('player');
-		var ctl   = document.getElementById('audioctl');
-		if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
-		if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
-		ctl.addEventListener('click', function () {
-			if (audio.paused) {
-				audio.play();
-				if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
-			} else if (!audio.paused) {
-				audio.pause();
-				if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
-			}
-		}, false);
+		var ctl = document.getElementById('audioctl');
+		try {
+			var audio = parent.document.getElementById('player');
+			if (audio.paused && !ctl.classList.contains("paused")) ctl.classList.add("paused");
+			if (!audio.paused && ctl.classList.contains("paused")) ctl.classList.remove("paused");
+			ctl.addEventListener('click', function () {
+				if (audio.paused) {
+					audio.play();
+					if (ctl.classList.contains("paused")) ctl.classList.remove("paused");
+				} else if (!audio.paused) {
+					audio.pause();
+					if (!ctl.classList.contains("paused")) ctl.classList.add("paused");
+				}
+			}, false);
+		} catch (e) {
+			ctl.style.display = "none";
+		}
 	</script>
 	    <!--<h1 class="title"><a href="start.html">farbreiz</a></h1>-->
            <section id="einleitung"> <!--class="plax"-->
